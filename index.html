@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <title>Balls</title>
+    </head>
+    <body>
+        <div id="container" class="container">
+            <div class="overlay">
+                <h2 class="title">Animation on pause</h2>
+                <div class="control-block">
+                    <ul class="list-control">
+                        <li class="item-control">
+                            <div class="keyboard-value">S</div>
+                            <p>Press this key for start / stop animation</p>
+                        </li>
+                        <li class="item-control">
+                            <div class="keyboard-value">&#8595</div>
+                            <p>Press this key to decrease the radius of the balls</p>
+                        </li>
+                        <li class="item-control">
+                            <div class="keyboard-value">R</div>
+                            <p>Press this key for restart application</p>
+                        </li>
+                    </ul>
+                    <div class="flex-center">
+                        <img class="mouse-icon" src="./assets/images/mouse-icon.svg" alt="LCM">
+                        <p class="aim-hint">Hold down the left mouse key to zoom in aim</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="mobile-control-block">
+                <button id="btn-mob-start" class="btn-control-mob">
+                    <img src="./assets/images/start-icon.svg" alt="S">
+                </button>
+                <button id="btn-mob-reset" class="btn-control-mob">
+                    <img src="./assets/images/refresh-icon.svg" alt="R">
+                </button>
+                <button id="btn-mob-decrease" class="btn-control-mob">
+                    <img src="./assets/images/decrease-icon.svg" alt="D">
+                </button>
+            </div>
+            <canvas id="canvas"></canvas>
+        </div>
+        <script src="./scripts/index.js"></script>
+    </body>
+</html>
